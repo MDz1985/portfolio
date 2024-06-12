@@ -1,0 +1,9 @@
+<nav class="w-fit mx-auto">
+  <ul class="flex gap-4">
+    @for (item of menuItems; track item) {
+      <li [class.underline]="activeRoute() === item">
+        <a [routerLink]="item" class="capitalize">{{ item }}</a>
+      </li>
+    }
+  </ul>
+</nav>
