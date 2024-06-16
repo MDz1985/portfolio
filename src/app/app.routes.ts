@@ -20,5 +20,14 @@ export const routes: Routes = [
     path: 'gallery',
     loadComponent: () => import('./pages/gallery.page/gallery.page.component').then(c => c.GalleryPageComponent),
     data: { animation: 'GalleryPage' },
-  }
+  },
+  {
+    path: '',
+    redirectTo: 'about',
+    pathMatch: 'full',
+  },
+  {
+    path: '**',
+    redirectTo: 'about',
+  },
 ];
