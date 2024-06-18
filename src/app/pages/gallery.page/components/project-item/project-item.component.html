@@ -1,1 +1,18 @@
-
+<div class="flex items-center justify-between">
+  <p class="text-title">{{ projectData().name }}</p>
+  <div class="flex gap-2">
+    @if (projectData().github) {
+      <a href="" class="">
+        <img src="" alt="git">
+      </a>
+    }
+    @if (projectData().deploy) {
+      <a href="" class="">
+        <img src="" alt="deploy">
+      </a>
+    }
+    <a href="" class="">
+      <img src="" alt="info">
+    </a>
+  </div>
+</div>
