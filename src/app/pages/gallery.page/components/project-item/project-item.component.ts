@@ -9,5 +9,5 @@ import { Project } from 'src/app/models/interfaces/project.interface';
   styleUrl: './project-item.component.scss'
 })
 export class ProjectItemComponent {
-  readonly projectData = input.required<Project>();
+  projectData = input.required<Project>();
 }

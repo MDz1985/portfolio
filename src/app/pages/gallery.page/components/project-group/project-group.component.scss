@@ -57,9 +57,16 @@ swiper-container.mySwiper {
   }
 }
 
-swiper-container:not(mySwiper) {
+swiper-container:not(.mySwiper) {
   width: 100%;
-  height: 250px;
+  swiper-slide {
+    height: fit-content;
+    opacity: 0.4;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
 }
 
 

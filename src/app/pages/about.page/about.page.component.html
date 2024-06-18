@@ -1,19 +1,24 @@
-<div class="flex flex-row-reverse">
-  <div class="w-[30%]">
-    <img class="object-center object-cover aspect-[0.7]" src="/photo.png" alt="portrait">
-  </div>
-  <div class="w-full">
-    <section>
-      <h2 class="text-headline">About me</h2>
-      <p>
-        I hold a high degree in power engineering and have extensive experience in the field of power plants. I have completed all RSSchool
-        frontend/backend courses and have successfully implemented more than 20 projects.<br><br>
-        Also I took part in the 3 commercial projects. You can learn more about that in the Gallery section.<br><br>
-        Furthermore, I had the opportunity to mentor a JavaScript/Front-end course at Rolling Scopes School during the 2023Q1 term.
-        Throughout this period, I guided 3 students and conducted 11 interviews.
-      </p>
+<div class="flex flex-col gap-8">
+
+<!--  <div class="w-full">-->
+    <section appSection class="flex max-md:flex-col-reverse">
+      <div class="w-full max-w-[800px]">
+        <h2 class="text-headline">About me</h2>
+        <p>
+          I hold a high degree in power engineering and have extensive experience in the field of power plants. I have completed all
+          RSSchool
+          frontend/backend courses and have successfully implemented more than 20 projects.<br><br>
+          Also I took part in the 3 commercial projects. You can learn more about that in the Gallery section.<br><br>
+          Furthermore, I had the opportunity to mentor a JavaScript/Front-end course at Rolling Scopes School during the 2023Q1 term.
+          Throughout this period, I guided 3 students and conducted 11 interviews.
+        </p>
+      </div>
+      <div class="w-full min-w-[200px] max-w-[300px] self-center">
+        <img class="object-center object-cover aspect-[0.7] rounded-3xl" src="/photo.png" alt="portrait">
+      </div>
+
     </section>
-    <section>
+    <section appSection>
       <h2 class="text-headline">Current work</h2>
       <p>
         In the EventUI I worked in a team of 5 persons. We created a big platform for creating events.
@@ -32,5 +37,5 @@
         components to his events site) .
       </p>
     </section>
-  </div>
+<!--  </div>-->
 </div>

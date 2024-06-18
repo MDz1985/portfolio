@@ -1,7 +1,9 @@
 <div class="h-[90vh]">
   <swiper-container
+    #slider
     style="--swiper-navigation-color: #f8e71c; --swiper-pagination-color: #f8e71c" class="mySwiper"
-    thumbs-swiper=".mySwiper2" space-between="10" navigation="true"
+    appSection
+    init="false"
   >
     @for (item of array; track i; let i = $index) {
       <swiper-slide>
@@ -10,11 +12,12 @@
     }
   </swiper-container>
   <swiper-container
+    #slider2
     class="mySwiper2" space-between="10" slides-per-view="5" free-mode="true"
     watch-slides-progress="true"
   >
     @for (item of array; track i; let i = $index) {
-      <swiper-slide>
+      <swiper-slide class="border rounded-3xl p-2">
         <img src="/{{ i }}.jpg"/>
       </swiper-slide>
     }

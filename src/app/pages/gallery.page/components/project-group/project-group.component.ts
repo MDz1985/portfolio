@@ -3,6 +3,7 @@ import { ProjectGroup } from 'src/app/models/interfaces/project.interface';
 import { ProjectItemComponent } from 'src/app/pages/gallery.page/components/project-item/project-item.component';
 import { register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
+import { SectionDirective } from 'src/app/directives/section.directive';
 
 register();
 
@@ -16,7 +17,7 @@ export const SliderParams: SwiperOptions = {
 
 export const Slider2Params: SwiperOptions = {
   watchSlidesProgress: true,
-  slidesPerView: 6,
+  slidesPerView: 'auto',
   freeMode: true,
   spaceBetween: 4,
   direction: 'vertical',
@@ -26,7 +27,8 @@ export const Slider2Params: SwiperOptions = {
   selector: 'app-project-group',
   standalone: true,
   imports: [
-    ProjectItemComponent
+    ProjectItemComponent,
+    SectionDirective
   ],
   templateUrl: './project-group.component.html',
   styleUrl: './project-group.component.scss',
@@ -35,7 +37,7 @@ export const Slider2Params: SwiperOptions = {
 export class ProjectGroupComponent implements AfterViewInit {
   @ViewChild('slider') private _slider!: ElementRef;
   @ViewChild('slider2') private _slider2!: ElementRef;
-  readonly groupData = input.required<ProjectGroup>();
+  groupData = input.required<ProjectGroup>();
 
   ngAfterViewInit(): void {
     Object.assign(this._slider.nativeElement, SliderParams);
