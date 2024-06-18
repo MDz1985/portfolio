@@ -1,1 +1,3 @@
-<p>gallery.page works!</p>
+@for(group of projectGroups; track group.id) {
+  <app-project-group [groupData]="group"></app-project-group>
+}
