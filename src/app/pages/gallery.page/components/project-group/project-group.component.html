@@ -1,6 +1,8 @@
 <div class="w-full flex flex-col gap-5">
   <h2 class="text-headline">{{ groupData().name }}</h2>
-  <div class="flex gap-5">
-    <app-project-item *ngFor="let project of groupData().projects" [projectData]="project"></app-project-item>
+  <div class="flex flex-col gap-5">
+    @for (project of groupData().projects; track project.id) {
+      <app-project-item [projectData]="project"/>
+    }
   </div>
 </div>
