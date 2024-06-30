@@ -1,11 +1,7 @@
 <div class="flex flex-col gap-5">
   @for (group of projectGroups; track group.id) {
-  <app-project-group [groupData]="group"/>
+    <app-project-group [groupData]="group"/>
   }
 </div>
-@if (a) {
-<div class="fixed inset-0 bg-primary">
-hi
-</div>
-}
+
 

@@ -25,6 +25,7 @@ export const routes: Routes = [
     path: '',
     redirectTo: 'about',
     pathMatch: 'full',
+    data: { animation: 'main' },
   },
   {
     path: '**',

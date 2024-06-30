@@ -1,48 +1,48 @@
-import { animate, animateChild, group, query, style, transition, trigger } from '@angular/animations';
+import { animate, animateChild, AnimationTriggerMetadata, group, query, style, transition, trigger } from '@angular/animations';
 
 const stepsLeft = [
   style({position: 'relative'}),
-  query(':enter, :leave', [
+  query(':enter:not(.exclude-from-animation), :leave:not(.exclude-from-animation)', [
     style({
       position: 'absolute',
       top: 0,
       left: 0,
       width: '100%',
     }),
-  ]),
-  query(':enter', [style({left: '-100%'})], {optional: true}),
-  query(':leave', animateChild(), {optional: true}),
+  ], {optional: true}),
+  query(':enter:not(.exclude-from-animation)', [style({left: '-100%'})], {optional: true}),
+  query(':leave:not(.exclude-from-animation)', animateChild(), {optional: true}),
   group([
-    query(':leave', [animate('300ms ease-out', style({left: '100%'}))], {optional: true}),
-    query(':enter', [animate('300ms ease-out', style({left: '0%'}))], {optional: true}),
+    query(':leave:not(.exclude-from-animation)', [animate('300ms ease-out', style({left: '100%'}))], {optional: true}),
+    query(':enter:not(.exclude-from-animation)', [animate('300ms ease-out', style({left: '0%'}))], {optional: true}),
   ]),
 ]
 
 const stepsRight = [
   style({position: 'relative'}),
-  query(':enter, :leave', [
+  query(':enter:not(.exclude-from-animation), :leave:not(.exclude-from-animation)', [
     style({
       position: 'absolute',
       top: 0,
       left: 0,
       width: '100%',
     }),
-  ]),
-  query(':enter', [style({left: '100%'})], {optional: true}),
-  query(':leave', animateChild(), {optional: true}),
+  ], {optional: true}),
+  query(':enter:not(.exclude-from-animation)', [style({left: '100%'})], {optional: true}),
+  query(':leave:not(.exclude-from-animation)', animateChild(), {optional: true}),
   group([
-    query(':leave', [animate('300ms ease-out', style({left: '-100%'}))], {optional: true}),
-    query(':enter', [animate('300ms ease-out', style({left: '0%'}))], {optional: true}),
+    query(':leave:not(.exclude-from-animation)', [animate('300ms ease-out', style({left: '-100%'}))], {optional: true}),
+    query(':enter:not(.exclude-from-animation)', [animate('300ms ease-out', style({left: '0%'}))], {optional: true}),
   ]),
 ]
 
-export const slideInAnimation =
+export const slideInAnimation: AnimationTriggerMetadata =
   trigger('routeAnimations', [
-    transition('* => AboutPage', stepsLeft),
-    transition('* => GalleryPage', stepsRight),
+    transition('SkillsPage => AboutPage, CertificatesPage => AboutPage, GalleryPage => AboutPage', stepsLeft),
+    transition('SkillsPage => GalleryPage, CertificatesPage => GalleryPage, AboutPage => GalleryPage', stepsRight),
     transition('AboutPage => SkillsPage', stepsRight),
-    transition('* => SkillsPage', stepsLeft),
+    transition('GalleryPage => SkillsPage, CertificatesPage => SkillsPage', stepsLeft),
     transition('GalleryPage => CertificatesPage', stepsLeft),
-    transition('* => CertificatesPage', stepsRight),
+    transition('SkillsPage => CertificatesPage, AboutPage => CertificatesPage', stepsRight),
   ])
 

@@ -28,7 +28,7 @@ export const Slider2Params: SwiperOptions = {
   standalone: true,
   imports: [
     ProjectItemComponent,
-    SectionDirective
+    SectionDirective,
   ],
   templateUrl: './project-group.component.html',
   styleUrl: './project-group.component.scss',

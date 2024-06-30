@@ -1,12 +1,13 @@
 import { Project } from 'src/app/models/interfaces/project.interface';
 
+export const GITHUB_URL = 'https://github.com/MDz1985/';
 export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 1,
-    name: 'Dual slider',
-    description: 'Dual slider',
+    name: 'Double slider',
+    description: 'Double slider',
     image: '',
-    github: '',
+    github: `${GITHUB_URL}double-slider`,
     deploy: ''
   },
   {
@@ -14,7 +15,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     name: 'Museum',
     description: 'Museum',
     image: '',
-    github: '',
+    github: `${GITHUB_URL}museum`,
     deploy: ''
   },
   {

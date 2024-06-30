@@ -7,7 +7,7 @@ import { ProjectGroupComponent } from 'src/app/pages/gallery.page/components/pro
   selector: 'app-gallery.page',
   standalone: true,
   imports: [
-    ProjectGroupComponent
+    ProjectGroupComponent,
   ],
   templateUrl: './gallery.page.component.html',
   styleUrl: './gallery.page.component.scss'

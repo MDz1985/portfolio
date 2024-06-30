@@ -1,8 +1,8 @@
 <div class="flex items-center justify-between">
   <h3 class="text-title cursor-pointer">{{ projectData().name }}</h3>
   <div class="flex gap-2">
-    @if (projectData().github) {
-      <a href="" class="">
+    @if (projectData().github; as url) {
+      <a [href]="url" class="">
         <img src="" alt="git">
       </a>
     }
@@ -11,8 +11,6 @@
         <img src="" alt="deploy">
       </a>
     }
-    <a href="" class="">
-      <img src="" alt="info">
-    </a>
+    <span (click)="showDescription()">info</span>
   </div>
 </div>
