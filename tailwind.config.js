@@ -16,7 +16,11 @@ module.exports = {
       title: '1.5rem',
       body: '1.2rem',
     },
-    extend: {},
+    extend: {
+      aspectRatio: {
+        desktop: '16/9',
+      }
+    },
   },
   plugins: [],
 }

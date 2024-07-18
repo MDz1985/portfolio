@@ -1,5 +1,6 @@
-import { Component, input, output } from '@angular/core';
+import { Component, computed, input, output } from '@angular/core';
 import { SectionDirective } from 'src/app/directives/section.directive';
+import { Project } from 'src/app/models/interfaces/project.interface';
 
 @Component({
   selector: 'app-project-description',
@@ -11,7 +12,8 @@ import { SectionDirective } from 'src/app/directives/section.directive';
   styleUrl: './project-description.component.scss',
 })
 export class ProjectDescriptionComponent {
-  readonly data = input.required<any>();
+  readonly data = input.required<Project>();
+  readonly image = computed<string>(() =>this.data().image.main ?? this.data().image.slider);
   readonly close = output<void>()
   closeModal() {
     this.close.emit();

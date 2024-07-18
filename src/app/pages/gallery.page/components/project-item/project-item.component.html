@@ -1,16 +1,18 @@
 <div class="flex items-center justify-between">
   <h3 class="text-title cursor-pointer">{{ projectData().name }}</h3>
-  <div class="flex gap-2">
+  <div class="flex gap-2 items-center">
+    @if (projectData().deploy; as url) {
+      <a [href]="url" class="" target="_blank">
+        <img src="/logo/web-page.svg" width="20" height="20" alt="deploy">
+      </a>
+    }
     @if (projectData().github; as url) {
-      <a [href]="url" class="">
-        <img src="" alt="git">
+      <a [href]="url" class="" target="_blank">
+        <img src="/logo/github-mark.svg" width="18" height="18" alt="git">
       </a>
     }
-    @if (projectData().deploy) {
-      <a href="" class="">
-        <img src="" alt="deploy">
-      </a>
-    }
-    <span (click)="showDescription()">info</span>
+    <div class="cursor-pointer" (click)="showDescription()">
+      <img src="/logo/info.svg" width="20" height="20" alt="git">
+    </div>
   </div>
 </div>

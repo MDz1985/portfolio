@@ -1,0 +1,5 @@
+@if (projectData().image.slider; as url) {
+  <img [src]="url" class="w-full h-full object-cover" alt="project image">
+} @else {
+  <h2>{{ projectData().name }}</h2>
+}

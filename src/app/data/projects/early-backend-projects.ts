@@ -5,7 +5,10 @@ export const EARLY_BACKEND_PROJECTS: Project[] = [
     id: 1,
     name: 'first',
     description: 'first',
-    image: '',
+    image: {
+      slider: '',
+      main: ''
+    },
     github: '',
     deploy: ''
   },
@@ -13,7 +16,10 @@ export const EARLY_BACKEND_PROJECTS: Project[] = [
     id: 2,
     name: 'Second',
     description: 'Third',
-    image: '',
+    image: {
+      slider: '',
+      main: ''
+    },
     github: '',
     deploy: ''
   },

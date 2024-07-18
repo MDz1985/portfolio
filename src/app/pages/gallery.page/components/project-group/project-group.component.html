@@ -16,7 +16,9 @@
   <div class="max-md:w-full px-5 flex justify-center">
     <swiper-container #slider class="mySwiper" init="false">
       @for (project of groupData().projects; track project.id; let i = $index) {
-        <swiper-slide>{{ project.name }}</swiper-slide>
+        <swiper-slide>
+          <app-slider-item [projectData]="project"/>
+        </swiper-slide>
       }
     </swiper-container>
   </div>

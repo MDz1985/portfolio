@@ -4,6 +4,7 @@ import { ProjectItemComponent } from 'src/app/pages/gallery.page/components/proj
 import { register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
 import { SectionDirective } from 'src/app/directives/section.directive';
+import { SliderItemComponent } from 'src/app/pages/gallery.page/components/project-group/slider-item/slider-item.component';
 
 register();
 
@@ -29,6 +30,7 @@ export const Slider2Params: SwiperOptions = {
   imports: [
     ProjectItemComponent,
     SectionDirective,
+    SliderItemComponent,
   ],
   templateUrl: './project-group.component.html',
   styleUrl: './project-group.component.scss',
