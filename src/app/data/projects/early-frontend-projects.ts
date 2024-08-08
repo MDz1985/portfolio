@@ -11,18 +11,18 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
       main: '/projects/double-slider/main.png',
     },
     github: `${ GITHUB_URL }double-slider`,
-    deploy: '1'
+    deploy: 'https://double-slider-mdz1985.netlify.app/'
   },
   {
     id: 2,
     name: 'Museum',
     description: 'Museum',
     image: {
-      slider: '',
+      slider: '/projects/museum/slider.png',
       main: ''
     },
     github: `${ GITHUB_URL }museum`,
-    deploy: ''
+    deploy: 'https://museum-mdz1985.netlify.app/'
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
       main: '/projects/momentum/main.png',
     },
     github: `${ GITHUB_URL }momentum`,
-    deploy: ''
+    deploy: 'https://momentum-mdz1985.netlify.app/'
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
       main: '/projects/async-race/main.png',
     },
     github: `${ GITHUB_URL }async-race`,
-    deploy: ''
+    deploy: 'https://async-race-mdz1985.netlify.app/'
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
       main: ''
     },
     github: `${ GITHUB_URL }christmas-time`,
-    deploy: ''
+    deploy: 'https://christmas-mdz1985.netlify.app/'
   },
   {
     id: 7,
@@ -77,6 +77,18 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
       main: ''
     },
     github: 'https://github.com/vozmi-dranik/recipes',
+    deploy: 'https://recipes-91982.web.app/'
+  },
+  {
+    id: 8,
+    name: 'Youtube client',
+    description: 'Youtube client',
+    image: {
+      slider: '',
+      main: ''
+    },
+    github: 'https://github.com/MDz1985/youtube-client',
     deploy: ''
   }
+
 ];
