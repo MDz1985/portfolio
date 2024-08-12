@@ -1,4 +1,8 @@
 <div class="flex flex-col gap-5">
+  <p>
+    I'm using free backend servers for <b>Async Race</b> and <b>Recipes</b> projects, so there is a delay of about 1 minute before the first response from the server. If you want to watch the
+    deploys, please reload the page of the deployed site (Async Race or Recipes) after 1 minute has passed. After that the site will work correctly.
+  </p>
   @for (group of projectGroups; track group.id) {
     <app-project-group [groupData]="group"/>
   }
