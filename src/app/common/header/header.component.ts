@@ -1,6 +1,7 @@
-import { Component, computed, inject, OnInit, signal } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component, inject, OnInit, signal } from '@angular/core';
+import { NavigationEnd, Router, RouterLink } from '@angular/router';
 import { filter } from 'rxjs';
+import { PERSONAL_INFO } from 'src/app/data/personal-info';
 
 enum MENU_ITEMS {
   ABOUT = 'about',
@@ -22,6 +23,7 @@ export class HeaderComponent implements OnInit {
   router = inject(Router);
   activeRoute = signal<string>('');
   readonly menuItems = Object.values(MENU_ITEMS);
+  readonly name = PERSONAL_INFO.name;
 
   ngOnInit(): void {
     this.router.events
