@@ -25,8 +25,8 @@ export const COMMERCIAL_PROJECTS: Project[] = [
   },
   {
     id: 3,
-    name: 'EvenUI',
-    description: 'EvenUI',
+    name: 'EventUI',
+    description: 'EventUI',
     image: {
       slider: '/projects/event-ui/slider.png',
       main: '/projects/event-ui/main.png',
