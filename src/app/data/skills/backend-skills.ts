@@ -18,8 +18,10 @@ export const BACKEND_SKILLS: Skills = {
     'Wordpress',
     'JWT token',
     'Docker',
+    'i18n'
   ],
   rarelyUsedSkills:[
+    'AWS',
     'Java',
     'C#',
     'C++',

@@ -41,7 +41,8 @@ export const PERSONAL_INFO = {
         We have also prepared a system that helps the organiser to create and use videoconferences from the platform. Finally, the organiser
         can sell whatever he wants. He can add necessary products and he will always be able to check the statistics of his shop.<br><br>
         What is even more important, the organiser can easily add his shop and videoconferences to the event website thanks to specially
-        prepared web components. I have been responsible for writing code to implement new platform features using the Angular v15-v17
+        prepared web components.<br><br>
+        I have been responsible for writing code to implement new platform features using the Angular v15-v17
         framework. Additionally, I created web components (microfrontends) using Angular v17, maintained and added new functionality to
         websites built using WordPress and PHP. Finally, I've been adding the ability for organisers to easily add our web components to
         their event websites by writing new WordPress widgets using PHP.`
