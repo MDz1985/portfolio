@@ -1,14 +1,15 @@
-import { Project } from 'src/app/models/interfaces/project.interface';
+import { ISkill, Project } from 'src/app/models/interfaces/project.interface';
 
 export const GITHUB_URL = 'https://github.com/MDz1985/';
 export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 1,
     name: 'Double slider',
-    description: 'Double slider',
+    description: 'It is a simple double vertical slider, controlled by clicking and scrolling',
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS],
     image: {
       slider: '/projects/double-slider/slider.png',
-      main: '/projects/double-slider/main.png',
+      main: '',
     },
     github: `${ GITHUB_URL }double-slider`,
     deploy: 'https://double-slider-mdz1985.netlify.app/'
@@ -17,6 +18,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 2,
     name: 'Museum',
     description: 'Museum',
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS],
     image: {
       slider: '/projects/museum/slider.png',
       main: ''
@@ -28,9 +30,10 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 3,
     name: 'Momentum',
     description: 'Momentum',
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS, ISkill.WEBPACK],
     image: {
       slider: '/projects/momentum/slider.png',
-      main: '/projects/momentum/main.png',
+      main: '',
     },
     github: `${ GITHUB_URL }momentum`,
     deploy: 'https://momentum-mdz1985.netlify.app/'
@@ -39,6 +42,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 4,
     name: 'Custom video player',
     description: 'Custom video player',
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS],
     image: {
       slider: '',
       main: ''
@@ -50,9 +54,10 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 5,
     name: 'Async race',
     description: 'Async race',
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.WEBPACK],
     image: {
       slider: '/projects/async-race/slider.png',
-      main: '/projects/async-race/main.png',
+      main: '',
     },
     github: `${ GITHUB_URL }async-race`,
     deploy: 'https://async-race-mdz1985.netlify.app/'
@@ -61,6 +66,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 6,
     name: 'Christmas time',
     description: 'Christmas time',
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.WEBPACK],
     image: {
       slider: '',
       main: ''
@@ -72,6 +78,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 7,
     name: 'Recipes',
     description: 'Recipes',
+    technologies: [ISkill.ANGULAR, ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS],
     image: {
       slider: '',
       main: ''
@@ -83,6 +90,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 8,
     name: 'Youtube client',
     description: 'Youtube client',
+    technologies: [ISkill.ANGULAR, ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.ANGULAR_MATERIAL],
     image: {
       slider: '',
       main: ''

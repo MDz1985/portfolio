@@ -7,7 +7,7 @@ export const COMMERCIAL_PROJECTS: Project[] = [
     description: 'Game site',
     image: {
       slider: '/projects/game-pog/slider.png',
-      main: '/projects/game-pog/main.png',
+      main: '',
     },
     github: '',
     deploy: 'https://gamepog.com/'
@@ -18,7 +18,7 @@ export const COMMERCIAL_PROJECTS: Project[] = [
     description: 'Game store',
     image: {
       slider: '/projects/game-host/slider.png',
-      main: '/projects/game-host/main.png',
+      main: '',
     },
     github: '',
     deploy: ''
@@ -29,7 +29,7 @@ export const COMMERCIAL_PROJECTS: Project[] = [
     description: 'EventUI',
     image: {
       slider: '/projects/event-ui/slider.png',
-      main: '/projects/event-ui/main.png',
+      main: '',
     },
     github: '',
     deploy: 'https://app.eventui.pl'

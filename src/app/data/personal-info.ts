@@ -31,7 +31,9 @@ export const PERSONAL_INFO = {
         Additional education in programming at the Rolling Scopes School. I've implemented more than 20 projects (frontend - (JS/TS/Angular)
         ; backend - (Node.JS/NestJS)).<br><br>
         More information you can find in the Gallery section. <br><br>
-        <b>This site is still under construction. I'm sorry for the incomplete information. It will be completed in the near future. Thank you!<b>`,
+        Finally, I had the opportunity to mentor a JavaScript/Front-end course at Rolling Scopes School during the 2023Q1 term.
+        Throughout this period, I guided 3 students and conducted 11 interviews.<br><br>
+        <b>This site is still under construction. I'm sorry for the incomplete information. It will be completed in the near future. Thank you!</b>`,
   currentJob: `In a team of 4 developers we created a large platform for organizing events.<br><br>
         Thanks to this platform, the organiser has the ability to automatically create the multilingual website for his event, add/edit all
         the information and media on this site.<br><br>

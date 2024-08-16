@@ -8,7 +8,7 @@ export const COMMAND_FRONTEND_PROJECTS: Project[] = [
     description: 'Language learning',
     image: {
       slider: '/projects/language-learning/slider.png',
-      main: '/projects/language-learning/main.png'
+      main: ''
     },
     github: `${ GITHUB_URL }rslang-app`,
     deploy: ''
