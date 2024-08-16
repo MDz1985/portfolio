@@ -6,7 +6,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 1,
     name: 'Double slider',
     description: 'It is a simple double vertical slider, controlled by clicking and scrolling',
-    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS],
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.GIT],
     image: {
       slider: '/projects/double-slider/slider.png',
       main: '',
@@ -18,7 +18,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 2,
     name: 'Museum',
     description: 'Museum',
-    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS],
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS, ISkill.GIT],
     image: {
       slider: '/projects/museum/slider.png',
       main: ''
@@ -30,7 +30,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 3,
     name: 'Momentum',
     description: 'Momentum',
-    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS, ISkill.WEBPACK],
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS, ISkill.WEBPACK, ISkill.GIT],
     image: {
       slider: '/projects/momentum/slider.png',
       main: '',
@@ -42,7 +42,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 4,
     name: 'Custom video player',
     description: 'Custom video player',
-    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS],
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.GIT],
     image: {
       slider: '',
       main: ''
@@ -54,7 +54,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 5,
     name: 'Async race',
     description: 'Async race',
-    technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.WEBPACK],
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.WEBPACK, ISkill.GIT],
     image: {
       slider: '/projects/async-race/slider.png',
       main: '',
@@ -66,7 +66,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 6,
     name: 'Christmas time',
     description: 'Christmas time',
-    technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.WEBPACK],
+    technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.WEBPACK, ISkill.GIT],
     image: {
       slider: '',
       main: ''
@@ -78,7 +78,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 7,
     name: 'Recipes',
     description: 'Recipes',
-    technologies: [ISkill.ANGULAR, ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS],
+    technologies: [ISkill.ANGULAR, ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.GRAPHQL, ISkill.TAILWIND, ISkill.GIT],
     image: {
       slider: '',
       main: ''
@@ -90,7 +90,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
     id: 8,
     name: 'Youtube client',
     description: 'Youtube client',
-    technologies: [ISkill.ANGULAR, ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.ANGULAR_MATERIAL],
+    technologies: [ISkill.ANGULAR, ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.ANGULAR_MATERIAL, ISkill.GIT],
     image: {
       slider: '',
       main: ''
