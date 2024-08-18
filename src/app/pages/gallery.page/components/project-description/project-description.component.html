@@ -17,9 +17,7 @@
       @if (image(); as url) {
         <img [src]="url" class="w-full aspect-desktop object-cover rounded-2xl" alt="project image">
       }
-      <div>
-        {{ data().description }}
-      </div>
+      <div [innerHTML]="data().description"></div>
     </div>
   </div>
 </div>

@@ -5,7 +5,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 1,
     name: 'Double slider',
-    description: 'It is a simple double vertical slider, controlled by clicking and scrolling',
+    description: 'Simple double vertical slider, controlled by clicking and scrolling',
     technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.GIT],
     image: {
       slider: '/projects/double-slider/slider.png',
@@ -17,7 +17,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 2,
     name: 'Museum',
-    description: 'Museum',
+    description: 'Website based on Figma layout. It contains with slider, video player, random image sorting, built-in map, parallax ets.',
     technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS, ISkill.GIT],
     image: {
       slider: '/projects/museum/slider.png',
@@ -29,7 +29,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 3,
     name: 'Momentum',
-    description: 'Momentum',
+    description: 'Dual-language web site with slider, custom audio-player, date/time, weather, todo-list ets.',
     technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.SASS, ISkill.WEBPACK, ISkill.GIT],
     image: {
       slider: '/projects/momentum/slider.png',
@@ -41,7 +41,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 4,
     name: 'Custom video player',
-    description: 'Custom video player',
+    description: 'Custom video player with user interface and keys control',
     technologies: [ISkill.HTML, ISkill.CSS, ISkill.JS, ISkill.GIT],
     image: {
       slider: '',
@@ -53,7 +53,9 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 5,
     name: 'Async race',
-    description: 'Async race',
+    description: `The game is based on a lot of asynchronous requests to the server. Choose a car or create your own. It is also possible to
+                  generate automatically 100 cars. It is possible to start the engine of the selected car and drive the track. Or hold a
+                  competition between all the cars on this page. You can change the colour and name of each car.`,
     technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.WEBPACK, ISkill.GIT],
     image: {
       slider: '/projects/async-race/slider.png',
@@ -65,7 +67,7 @@ export const EARLY_FRONTEND_PROJECTS: Project[] = [
   {
     id: 6,
     name: 'Christmas time',
-    description: 'Christmas time',
+    description: 'This game will put you in the Christmas spirit. You will be able to decorate the selected virtual Christmas tree with toys and garlands.',
     technologies: [ISkill.HTML, ISkill.CSS, ISkill.TS, ISkill.SASS, ISkill.WEBPACK, ISkill.GIT],
     image: {
       slider: '',

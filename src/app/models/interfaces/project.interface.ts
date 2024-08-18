@@ -49,4 +49,5 @@ export enum ISkill {
   RXJS = 'RxJS',
   NGRX = 'NgRx',
   RX_ANGULAR = 'RxAngular',
+  GOODLE_CHARTS = 'Google Charts',
 }
