@@ -18,7 +18,7 @@ export const COMMAND_FRONTEND_PROJECTS: Project[] = [
     ],
     image: {
       slider: '/projects/language-learning/slider.png',
-      main: ''
+      main: ['']
     },
     github: `${ GITHUB_URL }rslang-app`,
     deploy: ''
@@ -29,7 +29,7 @@ export const COMMAND_FRONTEND_PROJECTS: Project[] = [
     description: 'An application for managing the project creation process. Includes boards where you can create columns with necessary tasks. You can move tasks in column and drop columns, edit or delete them. You can also swap columns. The application is localized (en/ru). It was made in the team of 3 people.',
     image: {
       slider: '',
-      main: ''
+      main: ['']
     },
     github: 'https://github.com/MDz1985/file-manager',
     deploy: ''

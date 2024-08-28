@@ -17,7 +17,7 @@ export interface ProjectGroup {
 
 export interface Image {
   slider: string;
-  main: string;
+  main: string[];
 }
 
 export enum ISkill {
@@ -34,6 +34,7 @@ export enum ISkill {
   GIT = 'Git',
   GITHUB = 'GitHub',
   DOCKER = 'Docker',
+  PRISMA = 'PrismaORM',
   JEST = 'Jest',
   REACT = 'React',
   REDUX = 'Redux',
@@ -43,6 +44,10 @@ export enum ISkill {
   TAILWIND = 'Tailwind',
   WEBPACK = 'Webpack',
   GRAPHQL = 'GraphQL',
+  POSTGRES = 'PostgreSQL',
+  JWT = 'JWT',
+  WEB_SOCKET = 'Web Socket',
+  FASTIFY = 'Fastify',
   MATERIAL_WEB = 'Material Web',
   WEB_COMPONENTS = 'Web Components',
   REACTIVE_FORMS = 'Reactive Forms',

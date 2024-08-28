@@ -13,8 +13,9 @@ import { Project } from 'src/app/models/interfaces/project.interface';
 })
 export class ProjectDescriptionComponent {
   readonly data = input.required<Project>();
-  readonly image = computed<string>(() =>this.data().image.main ?? this.data().image.slider);
-  readonly close = output<void>()
+  readonly image = computed<string>(() => this.data().image.main[0] ?? this.data().image.slider);
+  readonly close = output<void>();
+
   closeModal() {
     this.close.emit();
   }
